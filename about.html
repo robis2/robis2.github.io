@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pages/products.html">Products</a></li>
+        <li><a href="/pages/orders.html">Orders/a></li>
+        <li><a href="/about.html">About</a></li>
+    </ul>
+    <h1>About</h1>
+    <table>
+        <caption>Opening hours</caption>    <!--Táblázat címe-->
+        <thead>  <!--Table head - Táblázat fejléc -->
+            <tr>
+               <th>Day</th> <!--Táblázat fejléc név-->
+               <th>Open</th>
+               <th>Close</th>
+            </tr>
+        </thead> 
+
+        <tbody> <!--Ha nincs thead akkor nem kell tbody sem-->
+        <tr>    <!-- tr jelenti az oszolot Első oszlop-->
+            <td>Monday - Friday</td>    <!--Td jelenti a cellát (sort) Első sor-->
+            <td>09:00</td>  <!--Második cella-->
+            <td rowspan="2">21:00</td>  <!--rowspan =cellák összevonása(kinyújtása) 2 sor magas-->
+        </tr>
+
+        <tr>
+            <td>Saturday</td    ><!--Második oszlop-->
+              <td>10:00</td> 
+             
+        </tr>
+
+        <tr>
+            <td>Sunday</td> <!--Harmadik oszlop-->
+            <!--<td>09:00</td>
+            <td>12:00</td>  --> <!--Harmadik cella-->
+            <td colspan="2">closed</td>  <!--rowspan =cellák összevonása(kinyújtása) 2 oszlop széles--> 
+        </tr>
+        
+        </tbody>
+       
+        <tfoot> <!--Táblázat lábléc-->
+            &copy; 2019
+        </tfoot>
+
+        <tfoot><!--Táblázat lábléc-->
+            <tr>
+             <!-- <td>&copy; 2019</td> -->
+                <td colspan="3">&copy; 2021</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+
+</body>
+
+</html>
